@@ -1,7 +1,7 @@
 package controllers
 
 import (
-        "beego-postgresql/database"
+    "beego-postgresql/database"
 	"beego-postgresql/models"
 	"github.com/beego/beego/v2/server/web"
 )
