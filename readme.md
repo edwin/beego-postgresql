@@ -99,37 +99,17 @@ $ curl -kv http://localhost:8080/
 > Accept: */*
 > 
 < HTTP/1.1 200 OK
-< Content-Length: 252
+< Content-Length: 161
 < Content-Type: application/json; charset=utf-8
-< Server: beegoServer:2.0.0
-< Date: Tue, 23 Dec 2025 15:14:31 GMT
+< Date: Tue, 23 Dec 2025 15:24:07 GMT
 < 
-[
-  {
-    "Id": 1,
-    "Name": "Ryoko Hirosue"
-  },
-  {
-    "Id": 2,
-    "Name": "Kasumi Arimura"
-  },
-  {
-    "Id": 3,
-    "Name": "Hikari Mitsushima"
-  },
-  {
-    "Id": 4,
-    "Name": "Nanao Arai"
-  },
-  {
-    "Id": 5,
-    "Name": "Mikako Tabe"
-  }
+* Connection #0 to host customer-svc-beego left intact
+[{"Id":1,"Name":"Ryoko Hirosue"},{"Id":2,"Name":"Kasumi Arimura"},{"Id":3,"Name":"Hikari Mitsushima"},{"Id":4,"Name":"Nanao Arai"},{"Id":5,"Name":"Mikako Tabe"}]
 ```
 
 ---
 
-## 🐳 Docker (Optional)
+## Podman (Optional)
 
 A Dockerfile is included.
 
