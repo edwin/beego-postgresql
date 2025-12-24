@@ -5,6 +5,8 @@ import (
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
+
+	otelgorm "gorm.io/plugin/opentelemetry/tracing"
 )
 
 var DB *gorm.DB
@@ -16,6 +18,8 @@ func Init() {
 	if err != nil {
 		log.Fatal("failed to connect database: ", err)
 	}
+
+	_ = db.Use(otelgorm.NewPlugin())
 
 	DB = db
 }

@@ -11,8 +11,11 @@ type MainController struct {
 }
 
 func (c *MainController) Get() {
+
+	ctx := c.Ctx.Request.Context()
+
 	var customers []models.Customer
-        database.DB.Find(&customers) 
+        database.DB.WithContext(ctx).Find(&customers) 
 	
 	c.Data["json"] = customers
 	c.ServeJSON()
