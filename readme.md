@@ -89,9 +89,9 @@ $ curl -kv http://localhost:8080/
 
 ---
 
-## Example Response
+## Example
 
-```json
+```
 $ curl -kv http://localhost:8080/
 > GET / HTTP/1.1
 > Host: localhost:8080
